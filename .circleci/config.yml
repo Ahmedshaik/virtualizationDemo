@@ -53,5 +53,5 @@ jobs:
               echo "▶️  functions/$f: sfdx evergreen:function:build"
               sfdx evergreen:function:build circleci-job
             done
-      - sfdx/scratch-delete:
-          scratch-alias: circleci-job
+     # - sfdx/scratch-delete:
+         # scratch-alias: circleci-job
