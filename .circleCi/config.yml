@@ -9,7 +9,6 @@ workflows:
   on-push:
     jobs:
       - test
-
 jobs:
   test:
     executor: sfdx/default
