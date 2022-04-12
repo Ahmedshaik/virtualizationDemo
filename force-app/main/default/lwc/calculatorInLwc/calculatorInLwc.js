@@ -11,6 +11,7 @@ export default class CalculatorInLwc extends LightningElement {
     }
     addition() {
         this.resultValue = parseInt(this.firstNumber) + parseInt(this.secondNumber);
+        alert('The result is '+this.resultValue);
     }
     multification() {
         this.resultValue = this.firstNumber * this.secondNumber;
