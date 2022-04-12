@@ -36,6 +36,8 @@ jobs:
       - sfdx/scratch-create:
           scratch-alias: circleci-job
           scratch-config: ./config/project-scratch-def.json
+      - sfdx/scratch-open:
+          scratch-alias: circleci-job
       - run:
           name: Deploy project to scratch org
           command: sfdx force:source:push -u circleci-job
